@@ -3,7 +3,7 @@ import clsx from "clsx";
 import SearchIcon from "@material-ui/icons/Search";
 import { SvgIcon } from "@material-ui/core";
 
-import { useHeaderStyles } from "./styles/Header";
+import { useHeaderStyles } from "../styles/Header";
 
 import Logo from "../assets/1-header/logo.png";
 import BannerLeft from "../assets/2-banner/banner-rounded-001.svg";

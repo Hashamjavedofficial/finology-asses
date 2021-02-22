@@ -2,12 +2,13 @@ import React from "react";
 
 import Header from "./Header";
 import Footer from "./Footer";
+import Home from "./Home";
 
 const Layout = (props) => {
   return (
     <div>
       <Header />
-      Layout component
+      <Home />
       <Footer />
     </div>
   );
