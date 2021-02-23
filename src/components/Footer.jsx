@@ -50,7 +50,7 @@ const Footer = (props) => {
           </div>
         </div>
         <div></div>
-        <img src={FooterLeft} alt="" className={classes.FooterLeft} />
+        {/*<img src={FooterLeft} alt="" className={classes.FooterLeft} />*/}
       </div>
 
       {/*<img src={FooterRight} alt="" />*/}
