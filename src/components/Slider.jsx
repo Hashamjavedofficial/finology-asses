@@ -1,7 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
+import { IconButton, Typography } from "@material-ui/core";
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 
 import SliderCard from "./SliderCard";
+import useSliderStyle from "../styles/Slider";
 
 import { slideCards } from "../utils/redundancy";
 
@@ -42,11 +46,38 @@ const CustomSlider = (props) => {
       },
     ],
   };
+
+  const classes = useSliderStyle();
+
   return (
     <div className="md:pl-20 sm:pl-6 my-10">
-      <div className="flex justify-between">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:mb-16 sm:mb-6">
+        <div className="pl-5 flex justify-between">
+          <div>
+            <IconButton className={classes.HeartButton}>
+              <FavoriteIcon />
+            </IconButton>
+          </div>
+
+          <div className="ml-10">
+            <Typography
+              component="h5"
+              variant="h5"
+              color="primary"
+              className={classes.HeadingText}
+            >
+              What other people say about our service
+            </Typography>
+          </div>
+        </div>
         <div></div>
-        <div></div>
+        <div className="flex justify-end md:col-span-2 lg:col-span-1 lg:pr-24 sm:pr-8 items-end">
+          <div>
+            <IconButton className={classes.SliderButton}>
+              <ChevronRightIcon />
+            </IconButton>
+          </div>
+        </div>
       </div>
       <Slider {...settings} className={"grid grid-cols-2 gap-4"}>
         {slideCards.map((card) => (

@@ -15,7 +15,7 @@ const useSytles = makeStyles((theme) => ({
   },
   Desigination: {
     color: "#b1b1b1",
-    fontSize: "11pt",
+    fontSize: "10pt",
   },
 }));
 
@@ -33,7 +33,7 @@ const SliderCard = (props) => {
           </div>
           <div className="ml-6">
             <p className={classes.Name}>{data.name}</p>
-            <p>{data.desigination}</p>
+            <p className={classes.Desigination}>{data.desigination}</p>
           </div>
         </div>
         <div className="mt-4">"{data.comment}"</div>
