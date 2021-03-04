@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 
-const usePeopleStyles = makeStyles((theme) => ({
+export const usePeopleStyles = makeStyles((theme) => ({
   EmojiButton: {
     color: "white",
     background: "#ff00b8",
@@ -12,14 +12,37 @@ const usePeopleStyles = makeStyles((theme) => ({
   HeadingText: {
     fontWeight: "bold",
   },
-  SliderButton: {
-    backgroundColor: "#eedeff",
-    color: "#8251bc",
+  EditButton: {
+    backgroundColor: "#fffede",
+    color: "#ffc120",
+    fontWeight: "bold",
     "&:hover": {
-      backgroundColor: "#8251bc",
+      backgroundColor: "#ffc120",
+      color: "#fffede",
+    },
+  },
+  ButtonExtra: {
+    width: "5rem",
+    borderRadius: "6px",
+  },
+  AddButton: {
+    backgroundColor: "#eedeff",
+    color: theme.palette.primary.main,
+    fontWeight: "bold",
+    marginLeft: "10px",
+
+    "&:hover": {
+      backgroundColor: theme.palette.primary.main,
       color: "#eedeff",
     },
   },
 }));
 
-export default usePeopleStyles;
+export const usePeopleCardStyles = makeStyles((theme) => ({
+  CardImage: {
+    height: "200px",
+    [theme.breakpoints.down("md")]: {
+      height: "150px",
+    },
+  },
+}));

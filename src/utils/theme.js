@@ -9,4 +9,19 @@ export const theme = createMuiTheme({
       main: "#fcd124",
     },
   },
+  typography: {
+    fontFamily: ["Nunito", "sans-serif"],
+  },
+  overrides: {
+    MuiButton: {
+      root: {
+        textTransform: "none",
+      },
+    },
+  },
+  props: {
+    MuiButton: {
+      disableRipple: true,
+    },
+  },
 });
