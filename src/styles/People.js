@@ -45,4 +45,15 @@ export const usePeopleCardStyles = makeStyles((theme) => ({
       height: "150px",
     },
   },
+  CardContainer: {
+    position: "relative",
+    "& .MuiSvgIcon-root": {
+      fontSize: "0.9rem",
+    },
+  },
+  EditCardButton: {
+    position: "absolute",
+    top: "2px",
+    right: "2px",
+  },
 }));
